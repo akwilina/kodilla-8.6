@@ -1,14 +1,6 @@
 function getTriangleArea(a, h) {
-    if (a > 0 && h > 0 ) {
-        return (a * h) / 2;
-    }
-
-    else {
-        return "nieprawidłowe dane";
-    }
+    return (a > 0 && h > 0) ? (a * h) / 2 : "nieprawidłowe dane";
 }
-
-console.log(getTriangleArea(10, 6));
 
 var triangle1Area = getTriangleArea(10, 15);
 console.log("pole trójkąta wynosi: " + triangle1Area);
